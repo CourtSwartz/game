@@ -2,7 +2,8 @@
 
 **Power in the Streets** is a browser-based strategy game where you lead a grassroots movement to fight for housing, education, or healthcare justice. Choose your cause, pick a hero, and build political power, legal progress, and community support — before you burn out or run out of funds!
 
-🌐 [Play Now on GitHub Pages](https://yourusername.github.io/power-in-the-streets/)  
+🌐 [Play Now on GitHub Pages](https://courtswartz.github.io/game/)
+
 🎮 Built with HTML, CSS, and JavaScript  
 🖼️ Featuring original character artwork and mechanics
 
