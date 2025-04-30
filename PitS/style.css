@@ -1,0 +1,176 @@
+/* General Page Styling */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #e1bee7);
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Grid Layout for Game Interface */
+  .container-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1/3 left, 2/3 right */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    align-items: flex-start;
+  }
+  
+  /* Text Alignment per Section */
+  .character-column {
+    text-align: center;
+  }
+  
+  .game-column {
+    text-align: left;
+  }
+  
+  /* Typography for Headings */
+  h1, h2 {
+    color: #6a1b9a;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 12px 20px;
+    margin: 10px;
+    background-color: #8e24aa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6a1b9a;
+  }
+  
+  /* Stat Bars */
+  .stat-group {
+    margin: 10px 0;
+  }
+  
+  .stat-label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  .stat-bar-container {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .stat-bar {
+    height: 100%;
+    line-height: 20px;
+    color: white;
+    text-align: right;
+    padding-right: 8px;
+    font-size: 13px;
+  }
+  
+  /* Stat Bar Colors */
+  .bar-energy { background-color: #4caf50; }
+  .bar-bank { background-color: #2196f3; }
+  .bar-legal { background-color: #9c27b0; }
+  .bar-community { background-color: #ff9800; }
+  .bar-points { background-color: #757575; }
+  
+  /* Full-Page Centering Layout */
+  .main-centered,
+  .full-center,
+  .hero-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .main-centered {
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  .full-center {
+    min-height: 80vh;
+    width: 100%;
+  }
+  
+  .hero-screen {
+    width: 100%;
+  }
+  
+  /* Utility Class to Hide Elements */
+  .hide {
+    display: none !important;
+  }
+  
+  /* Hero Selection Grid */
+  .hero-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+  
+  /* Individual Hero Card */
+  .hero-card {
+    width: 180px;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .hero-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #6a1b9a;
+  }
+  
+  .hero-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-card button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  /* Make hero-screen span full grid width if inside grid container */
+  #game-container .hero-screen {
+    grid-column: 1 / -1;
+    padding: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container-row {
+      display: block;
+    }
+  
+    .character-column,
+    .game-column {
+      width: 100%;
+    }
+  }
+  
